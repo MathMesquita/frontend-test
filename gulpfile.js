@@ -8,7 +8,7 @@ let gulp = require("gulp"),
   inputs = {
     sass:"src/sass/*.sass",
     html:"src/*.html",
-    js:"src/js/*.js"
+    js:"src/js/**/*.js"
   },
   outputs = {
     sass:"build/css/",
