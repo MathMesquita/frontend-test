@@ -1,10 +1,18 @@
 (function(global){
   "use strict";
 
-  global.utils = {
-    getLastIndex: function(arr){
-      return arr.length ? arr.length - 1 : 0;
+  if ( !global.modules ) global.modules = Object.create(null);
+
+  global.modules.utils = {
+    fetchJson: function(jsonFile){
+      return new Promise((resolve, reject) => {
+        fetch(jsonFile)
+          .then(response => response.json())
+          .then(resolve)
+          .catch(reject);
+      });
     }
   };
+
 
 })(window);
