@@ -1,0 +1,20 @@
+{
+  "name": "frontend-test-master",
+  "version": "1.0.0",
+  "description": "A simple test for skill measurement",
+  "main": "index.js",
+  "repository": "https://github.com/MathMesquita/frontend-test",
+  "author": "Matheus Mesquita <matheusmesquita.168@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  }
+}
